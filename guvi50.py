@@ -1,11 +1,9 @@
-n=0
-a=int(input())
-while(a!=0):
-	a=a/2
-	if a==1:
-		   n=1
-		   break
-if n!=1:
-	  print("no")
+def power(n):
+    while(n%2==0):
+	n/=2;
+     return n==1;
+n=int(input())
+if power(n):
+     print("yes")
 else:
-	  print("yes")
+     print("no")
